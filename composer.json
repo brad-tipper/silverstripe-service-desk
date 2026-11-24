@@ -1,0 +1,22 @@
+{
+    "name": "bradtipper/silverstripe-service-desk",
+    "description": "Support tickets, contact and feedback endpoints, CMS admin and a public support portal for silverstripe-restful-framework apps",
+    "type": "silverstripe-vendormodule",
+    "license": "proprietary",
+    "keywords": ["silverstripe", "support", "tickets", "service desk"],
+    "require": {
+        "php": "^8.3",
+        "bradtipper/silverstripe-restful-framework": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BradTipper\\AppBackend\\Account\\": "src/Account/",
+            "BradTipper\\AppBackend\\Admin\\": "src/Admin/",
+            "BradTipper\\AppBackend\\Model\\": "src/Model/",
+            "BradTipper\\AppBackend\\Portal\\": "src/Portal/",
+            "BradTipper\\AppBackend\\Support\\": "src/Support/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
