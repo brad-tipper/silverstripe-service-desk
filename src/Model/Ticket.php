@@ -1,9 +1,9 @@
 <?php
 
-namespace BradTipper\AppBackend\Model;
+namespace BradTipper\RestfulFramework\Model;
 
-use BradTipper\AppBackend\Auth\ApiMemberExtension;
-use BradTipper\AppBackend\Support\TicketNotifications;
+use BradTipper\RestfulFramework\Auth\ApiMemberExtension;
+use BradTipper\RestfulFramework\Support\TicketNotifications;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridField;

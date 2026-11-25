@@ -1,13 +1,13 @@
 <?php
 
-namespace BradTipper\AppBackend\Account;
+namespace BradTipper\RestfulFramework\Account;
 
-use BradTipper\AppBackend\Api\ApiController;
-use BradTipper\AppBackend\Api\ApiException;
-use BradTipper\AppBackend\Api\Input;
-use BradTipper\AppBackend\Model\FeedbackSubmission;
-use BradTipper\AppBackend\OpenApi\Spec;
-use BradTipper\AppBackend\Support\Turnstile;
+use BradTipper\RestfulFramework\Api\ApiController;
+use BradTipper\RestfulFramework\Api\ApiException;
+use BradTipper\RestfulFramework\Api\Input;
+use BradTipper\RestfulFramework\Model\FeedbackSubmission;
+use BradTipper\RestfulFramework\OpenApi\Spec;
+use BradTipper\RestfulFramework\Support\Turnstile;
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Control\HTTPResponse;
 

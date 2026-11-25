@@ -1,8 +1,8 @@
 <?php
 
-namespace BradTipper\AppBackend\Portal;
+namespace BradTipper\RestfulFramework\Portal;
 
-use BradTipper\AppBackend\AppConfig;
+use BradTipper\RestfulFramework\AppConfig;
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Control\HTTPResponse;

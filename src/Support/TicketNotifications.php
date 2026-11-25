@@ -1,10 +1,10 @@
 <?php
 
-namespace BradTipper\AppBackend\Support;
+namespace BradTipper\RestfulFramework\Support;
 
-use BradTipper\AppBackend\AppConfig;
-use BradTipper\AppBackend\Model\Ticket;
-use BradTipper\AppBackend\Model\TicketMessage;
+use BradTipper\RestfulFramework\AppConfig;
+use BradTipper\RestfulFramework\Model\Ticket;
+use BradTipper\RestfulFramework\Model\TicketMessage;
 use SilverStripe\Security\Member;
 
 /** The emails around support tickets. Each one is queued and none of them throws. */
@@ -71,7 +71,7 @@ final class TicketNotifications
             Mailer::notify($support, $subject, [
                 'heading' => $subject,
                 'paragraphs' => array_merge(["From {$member->Email} (user {$member->ID}), status {$ticket->getStatusLabel()}."], self::paragraphs($body)),
-                'button' => ['label' => 'Open in admin', 'url' => rtrim((string) AppConfig::get('public_url'), '/') . "/admin/tickets/BradTipper-AppBackend-Model-Ticket/EditForm/field/BradTipper-AppBackend-Model-Ticket/item/{$ticket->ID}/edit"],
+                'button' => ['label' => 'Open in admin', 'url' => rtrim((string) AppConfig::get('public_url'), '/') . "/admin/tickets/BradTipper-RestfulFramework-Model-Ticket/EditForm/field/BradTipper-RestfulFramework-Model-Ticket/item/{$ticket->ID}/edit"],
             ]);
         } catch (\Throwable $e) {
             // Never fail the caller over a notification.

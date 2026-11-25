@@ -1,10 +1,10 @@
 <?php
 
-namespace BradTipper\AppBackend\Model;
+namespace BradTipper\RestfulFramework\Model;
 
 use Ramsey\Uuid\Uuid;
-use BradTipper\AppBackend\Auth\ApiMemberExtension;
-use BradTipper\AppBackend\Support\TicketNotifications;
+use BradTipper\RestfulFramework\Auth\ApiMemberExtension;
+use BradTipper\RestfulFramework\Support\TicketNotifications;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\ReadonlyField;

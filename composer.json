@@ -6,15 +6,15 @@
     "keywords": ["silverstripe", "support", "tickets", "service desk"],
     "require": {
         "php": "^8.3",
-        "bradtipper/silverstripe-restful-framework": "^0.1"
+        "bradtipper/silverstripe-restful-framework": "^0.2"
     },
     "autoload": {
         "psr-4": {
-            "BradTipper\\AppBackend\\Account\\": "src/Account/",
-            "BradTipper\\AppBackend\\Admin\\": "src/Admin/",
-            "BradTipper\\AppBackend\\Model\\": "src/Model/",
-            "BradTipper\\AppBackend\\Portal\\": "src/Portal/",
-            "BradTipper\\AppBackend\\Support\\": "src/Support/"
+            "BradTipper\\RestfulFramework\\Account\\": "src/Account/",
+            "BradTipper\\RestfulFramework\\Admin\\": "src/Admin/",
+            "BradTipper\\RestfulFramework\\Model\\": "src/Model/",
+            "BradTipper\\RestfulFramework\\Portal\\": "src/Portal/",
+            "BradTipper\\RestfulFramework\\Support\\": "src/Support/"
         }
     },
     "minimum-stability": "dev",

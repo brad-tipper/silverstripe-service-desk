@@ -1,18 +1,18 @@
 ---
 Name: service-desk
-After: '#app-backend-routes'
+After: '#restful-framework-routes'
 ---
 SilverStripe\Control\Director:
   rules:
-    'portal//$Action': BradTipper\AppBackend\Portal\PortalController
-    'api/v1/contact': BradTipper\AppBackend\Account\ContactController
-    'api/v1/feedback': BradTipper\AppBackend\Account\FeedbackController
-    'api/v1/tickets//$Action/$ID': BradTipper\AppBackend\Account\TicketsController
+    'portal//$Action': BradTipper\RestfulFramework\Portal\PortalController
+    'api/v1/contact': BradTipper\RestfulFramework\Account\ContactController
+    'api/v1/feedback': BradTipper\RestfulFramework\Account\FeedbackController
+    'api/v1/tickets//$Action/$ID': BradTipper\RestfulFramework\Account\TicketsController
 
-BradTipper\AppBackend\Model\Ticket:
+BradTipper\RestfulFramework\Model\Ticket:
   extensions:
-    - BradTipper\AppBackend\Sync\SyncedExtension
+    - BradTipper\RestfulFramework\Sync\SyncedExtension
 
 SilverStripe\Security\Member:
   extensions:
-    - BradTipper\AppBackend\Admin\MemberSupportExtension
+    - BradTipper\RestfulFramework\Admin\MemberSupportExtension

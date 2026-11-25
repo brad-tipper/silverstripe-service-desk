@@ -1,9 +1,9 @@
 <?php
 
-namespace BradTipper\AppBackend\Admin;
+namespace BradTipper\RestfulFramework\Admin;
 
-use BradTipper\AppBackend\Model\ContactSubmission;
-use BradTipper\AppBackend\Model\FeedbackSubmission;
+use BradTipper\RestfulFramework\Model\ContactSubmission;
+use BradTipper\RestfulFramework\Model\FeedbackSubmission;
 use SilverStripe\Admin\ModelAdmin;
 
 /** Things people send in: contact messages and feedback. Other modules can add their own models to managed_models. */
