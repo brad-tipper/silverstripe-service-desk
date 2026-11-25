@@ -43,7 +43,7 @@ The widgets call the same `/api/v1` endpoints as the apps and keep tokens in `se
 Branding and settings come from the framework's `AppConfig`, in your project's YAML:
 
 ```yaml
-BradTipper\AppBackend\AppConfig:
+BradTipper\RestfulFramework\AppConfig:
   name: MyApp                                   # portal header, emails
   brand_color: '#2f4c63'                        # portal header and buttons
   brand_color_text: '#ffffff'

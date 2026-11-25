@@ -1,8 +1,8 @@
 <?php
 
-namespace BradTipper\AppBackend\Admin;
+namespace BradTipper\RestfulFramework\Admin;
 
-use BradTipper\AppBackend\Model\Ticket;
+use BradTipper\RestfulFramework\Model\Ticket;
 use SilverStripe\Admin\ModelAdmin;
 
 /**

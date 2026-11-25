@@ -1,11 +1,11 @@
 <?php
 
-namespace BradTipper\AppBackend\Admin;
+namespace BradTipper\RestfulFramework\Admin;
 
-use BradTipper\AppBackend\Auth\ApiMemberExtension;
-use BradTipper\AppBackend\Model\ContactSubmission;
-use BradTipper\AppBackend\Model\FeedbackSubmission;
-use BradTipper\AppBackend\Model\Ticket;
+use BradTipper\RestfulFramework\Auth\ApiMemberExtension;
+use BradTipper\RestfulFramework\Model\ContactSubmission;
+use BradTipper\RestfulFramework\Model\FeedbackSubmission;
+use BradTipper\RestfulFramework\Model\Ticket;
 use SilverStripe\Core\Extension;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridField;
